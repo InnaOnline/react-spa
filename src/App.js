@@ -13,10 +13,10 @@ import { Recipe } from './pages/Recipe';
 function App() {
   return (
     <>
-      <div basename="/react-spa">
+      <div>
         <Header />
         <main className="container content">
-          <Routes>
+          <Routes basename="/react-spa">
             <Route exact path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contact />} />
